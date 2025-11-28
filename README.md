@@ -1,10 +1,10 @@
 # Movieconverter.py
-A text-based front end for ffmpeg that automates converting movie files using common settings.
-
-Keeps the English audio and subtitle streams, and drops the others.
-Strips out all the metadata, but then writes in titles for the audio and subtitle streams.
-The container format and codecs are selectable, within a few common choices.
-
+A text-based front end for ffmpeg that automates converting movie files using common settings.  
+  
+Keeps the English audio and subtitle streams, and drops the others.  
+Strips out all the metadata, but then writes in titles for the audio and subtitle streams.  
+The container format and codecs are selectable, within a few common choices.  
+  
 ```
 usage: movieconvert.py [-h] [-f {mp4,mkv}] [-v {copy,avc,hevc}] [-r] [-c CRF_VALUE] [-a {copy,aac,ac3,eac3}] [-2] [-s] [-d] [-y] [--verbose] input
 
