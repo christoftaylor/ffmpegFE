@@ -1,9 +1,11 @@
 # Movieconverter.py
 A text-based front end for ffmpeg that automates converting movie files using common settings.  
   
-Keeps the English audio and subtitle streams, and drops the others.  
-Strips out all the metadata, but then writes in titles for the audio and subtitle streams.  
+By default, it converts whatever into h265 video and eac3 audio inside a MP4 container.  
 The container format and codecs are selectable, within a few common choices.  
+Keeps the English audio and subtitle streams, and drops any other languages.  
+Strips out all the metadata, but then writes in titles for the audio and subtitle streams.  
+It presents the ffmpeg command, but what is presented lacks quotes around file names and strings, so it can't be directly copy pasted.  
   
   
 ```
@@ -39,7 +41,7 @@ Example:
 
 Input file:   test.mkv
   Video:
-    index: 0, codec: h264, resolution: 1280x720, title: Test.h265.aac.movie
+    index: 0, codec: h264, resolution: 1280x720, title: Test.h264.aac.movie
   Audio:
     index: 1, codec: aac, language: eng, channels: 2, title: English
   Subtitles:
